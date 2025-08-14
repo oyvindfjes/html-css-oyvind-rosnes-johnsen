@@ -5,10 +5,18 @@
 @import url("./_variables.css");
 /* Feel free to add as many of these imports as you need */
 
+
+/*GLOBAL*/
+
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  color: var(--bright-text-color);
+  background-color: var(--background-color);
+  font-family: unbounded, sans-serif;
+
 }
+
+
+/* Dette lå her fra før av
 
 .centered {
   display: flex;
@@ -17,3 +25,4 @@ body {
   justify-content: center;
   text-align: center;
 }
+  */
