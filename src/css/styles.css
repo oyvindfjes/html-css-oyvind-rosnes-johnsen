@@ -1,19 +1,96 @@
-/* Use import to split up your CSS into manageable chunks */
+
 @import url("./_reset.css");
-/* Files that are only needed to be imported are called partials */
-/* These are marked with an underscore: */
+@import url("./index.css");
 @import url("./_variables.css");
-/* Feel free to add as many of these imports as you need */
+@import url("./products.css");
+@import url("./product-details.css");
+@import url("./checkout.css");
 
 
-/*GLOBAL*/
+/*GLOBAL STYLES*/
 
 body {
   color: var(--bright-text-color);
   background-color: var(--background-color);
+  background-image: url('/images/header-background.jpg');
+  overflow-x: hidden;
   font-family: unbounded, sans-serif;
-
+  margin: 0 auto;
+  min-height: 2000px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+/*HEADER*/
+
+.header {
+  position: sticky;
+  top: -0px;
+  height: 400px;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 400px;
+  width: 100vw;
+  top: -16px;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+
+.header-menu a {
+  color: var(--bright-text-color);
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.header-menu .logo { 
+  width: 8em;
+  margin-top: 30px;
+  filter: 
+  brightness(0)
+  invert(1)      
+  sepia(1)    
+  saturate(1000%)
+  hue-rotate(180deg)
+  brightness(1.2);
+}
+.header-menu .header-menu-text {
+  position: relative;
+  top: 3em;
+}
+
+/*PAGE CONTENT*/
+
+.page-content {
+  display: flex;
+  justify-self: center;
+  background-color: white;
+  width: 90vw;
+}
+
+p, h1, h2, h3 {
+  padding: 0 2rem;;
+  margin-top: 0;
+  margin-bottom: 1.5rem; 
+}
+
 
 
 /* Dette lå her fra før av
