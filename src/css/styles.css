@@ -35,7 +35,7 @@ ul {
   background-repeat: no-repeat;
 }
 
-.header-menu {
+.main-header-menu {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -52,7 +52,7 @@ ul {
 }
 
 
-.header-menu a {
+.main-header-menu a {
   color: var(--bright-text-color);
   text-decoration: none;
   padding: 0 1rem;
@@ -60,7 +60,7 @@ ul {
   font-weight: 400;
 }
 
-.header-menu .logo { 
+.main-header-menu .logo { 
   width: 8em;
   margin-top: 30px;
   filter: 
@@ -71,7 +71,7 @@ ul {
   hue-rotate(180deg)
   brightness(1.2);
 }
-.header-menu .header-menu-text {
+.main-header-menu .header-menu-text {
   position: relative;
   top: 3em;
 }
@@ -79,16 +79,60 @@ ul {
 /*PAGE CONTENT*/
 
 .page-content {
+  position: relative;
   display: flex;
   justify-self: center;
+  flex-wrap: wrap;
   background-color: white;
   width: 90vw;
+  gap: 1rem;
+  top: 200px;
+  padding-top: 160px;
+  justify-content: center;
+}
+
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 600px; /* Basis på 300px, vokser og krymper */
+  max-width: 600px; /* Valgfri maksbredde */
+  justify-content: center;
+  align-items: center; /* Sentrer innholdet */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: var(--bright-text-color);
+}
+
+.product-image {
+  width: 100%; /* Matcher containeren */
+  height: auto; /* Fast høyde eller auto */
+  object-fit: cover; /* Fyller området pent */
+  border-radius: 8px;
 }
 
 p, h1, h2, h3 {
   padding: 0 2rem;;
   margin-top: 0;
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  color: var(--dark-text-color);
+  font-size: 3em;
+}
+.our-jackets-h1 { /*temp fix, sort out flex-box if time*/
+  top: 300px;
+  left: 16vw;
+  position: relative;
+  color: var(--dark-text-color);
+  font-size: 3em;
+  z-index: 1;
+}
+h2 {
+  color: var(--red-text-color);
 }
 
 
