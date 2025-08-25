@@ -16,7 +16,24 @@ body {
   overflow-x: hidden;
   font-family: unbounded, sans-serif;
   margin: 0 auto;
-  min-height: 2000px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Viktig! */
+  margin: 0;
+}
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: var(--dark-text-color);
+  color: var(--bright-text-color);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 80px;
 }
 
 p, h1, h2, h3 {
@@ -115,9 +132,9 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 500px; /* Valgfri maksbredde */
+  max-width: 500px;
   justify-content: center;
-  align-items: center; /* Sentrer innholdet */
+  align-items: center;
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
@@ -129,6 +146,11 @@ ul {
   height: auto; /* Fast høyde eller auto */
   object-fit: cover; /* Fyller området pent */
   border-radius: 8px;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .card-info {

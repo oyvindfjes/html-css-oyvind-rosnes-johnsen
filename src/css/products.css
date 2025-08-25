@@ -1,11 +1,11 @@
 .our-jackets-h1 { /*temp fix, sort out flex-box if time*/
-    left: 6vw;
-    position: relative;
-    color: var(--dark-text-color);
-    font-size: 3em;
-    z-index: 1;
-  }
+  left: 6vw;
+  position: relative;
+  color: var(--dark-text-color);
+  font-size: 3em;
+  z-index: 1;
+}
 
-  #page-content-products {
+#page-content-products {
     top: -150px;
-  }
+}
