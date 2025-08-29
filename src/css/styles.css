@@ -108,6 +108,14 @@ ul {
   top: 7rem;
 }
 
+.user-actions {
+  position: absolute;
+  top: 2vh;
+  right: 1vw;
+  display: flex;
+  font-size: 1.5rem;
+}
+
 /*PAGE CONTENT*/
 
 .page-content {
@@ -168,7 +176,7 @@ ul {
   font-size: 1.5rem;
 }
 
-.add-to-cart-btn {
+.add-to-cart {
   background-color: var(--bright-text-color);
   color: var(--dark-text-color);
   stroke: 1rem solid var(--dark-text-color);
@@ -176,10 +184,6 @@ ul {
   border-radius: 2rem;
   font-size: 1.5rem;
   position: relative;
-}
-
-.add-to-cart-btn::before {
-  content: " + Add to Cart ";
 }
 
 
