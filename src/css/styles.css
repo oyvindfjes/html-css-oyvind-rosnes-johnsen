@@ -21,6 +21,7 @@ body {
   min-height: 100vh; /* Viktig! */
   margin: 0;
 }
+
 main {
   flex: 1;
 }
@@ -47,8 +48,20 @@ h1 {
   font-size: 3em;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
 h2 {
   color: var(--red-text-color);
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 ul {
@@ -84,6 +97,14 @@ ul {
   );
 }
 
+@media (max-width: 600px) {
+  .main-header-menu {
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+}
+
 .main-header-menu a {
   color: var(--bright-text-color);
   text-decoration: none;
@@ -103,9 +124,16 @@ ul {
   hue-rotate(180deg)
   brightness(1.2);
 }
-.main-header-menu .header-menu-text {
+.header-menu-text {
   position: relative;
   top: 7rem;
+}
+
+@media (max-width: 600px) {
+  .header-menu-text {
+    font-size: 1.5em;
+    top: 0;
+  }
 }
 
 .user-actions {
@@ -132,6 +160,16 @@ ul {
   padding-top: 160px;
   justify-content: flex-start;
   border-radius: 4rem;
+}
+
+@media (max-width: 600px) {
+  .page-content {
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 95vw;
+    top: 150px;
+  }
 }
 
 /*PRODUCT CARDS*/

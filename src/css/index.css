@@ -20,6 +20,12 @@
   font-size: 5rem;
 }
 
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 2rem;
+  }
+}
+
 .autumn-favorites-h1 { /*temp fix, sort out flex-box if time*/
     left: 6vw;
     position: relative;
@@ -27,6 +33,13 @@
     font-size: 3em;
     z-index: 1;
     top: 350px;
+  }
+
+  @media (max-width: 600px) {
+    .autumn-favorites-h1 {
+      font-size: 2em;
+      top: 300px;
+    }
   }
 
   #page-content-home {
