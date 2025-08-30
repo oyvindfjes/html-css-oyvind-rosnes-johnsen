@@ -44,3 +44,36 @@
     border: 0.15rem solid black;
     border-radius: 1rem;
 }
+
+.details-form {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.shipping-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.delivery-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+input, .confirm-btn {
+    width: 16vw;
+    height: 2rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.confirm-btn {
+    background-color: var(--dark-text-color);
+    color: var(--bright-text-color);
+    cursor: pointer;
+}

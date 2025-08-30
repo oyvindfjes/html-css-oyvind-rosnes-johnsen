@@ -1,3 +1,25 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-text {
+  position: relative;
+  top: 90px;
+  font-size: 2em;
+  opacity: 0.6;
+}
+
+.welcome {
+  color: var(--bright-text-color);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 90px;
+  font-size: 5rem;
+}
+
 .autumn-favorites-h1 { /*temp fix, sort out flex-box if time*/
     left: 6vw;
     position: relative;
