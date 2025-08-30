@@ -17,3 +17,26 @@
     font-size: 2rem;
     color: var(--dark-text-color);
 }
+
+@media (max-width: 600px) {
+    .confirmation-page-content {
+      padding: 2rem 1rem;
+      width: 95vw;
+      border-radius: 2rem;
+      gap: 1.5rem;
+    }
+  
+    .confirmation-page-content p {
+      font-size: 1.2rem;
+      padding: 0 0.5rem;
+    }
+  
+    .confirmation-summary {
+      text-align: center;
+    }
+  
+    .summary-image {
+      width: 30vw;
+      margin: 0 auto;
+    }
+  }

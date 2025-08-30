@@ -9,3 +9,17 @@
 #page-content-products {
     top: -150px;
 }
+
+@media (max-width: 600px) {
+  .our-jackets-h1 {
+    font-size: 1.8rem;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  #page-content-products {
+    top: -80px;
+  }
+}

@@ -77,3 +77,51 @@ input, .confirm-btn {
     color: var(--bright-text-color);
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .checkout-container {
+      padding: 2rem 1rem;
+      top: -50px;
+      width: 95vw;
+      border-radius: 2rem;
+    }
+  
+    .checkout {
+      left: 0;
+      text-align: center;
+      font-size: 2rem;
+    }
+  
+    .checkout-box {
+      flex-direction: column;
+      width: 100%;
+      gap: 1.5rem;
+    }
+  
+    .summary,
+    .details {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .summary-image {
+      width: 25vw;
+      margin-left: 0;
+      margin: 0 auto;
+    }
+  
+    .details-form {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    input, .confirm-btn {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .shipping-details,
+    .delivery-details {
+      width: 100%;
+    }
+  }

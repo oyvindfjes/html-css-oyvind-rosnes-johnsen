@@ -127,3 +127,44 @@
     border-radius: 0.5rem;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .product-detail-container {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      top: -80px;
+      width: 95vw;
+      gap: 2rem;
+    }
+  
+    .product-detail-image {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .product-details-info {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+  
+    .size-selector-label,
+    .add-to-cart-label {
+      margin-left: 0;
+      display: block;
+      text-align: center;
+      margin: 1rem auto;
+    }
+  
+    .shopping-cart {
+      width: 90vw;
+      min-width: unset;
+      right: 5vw;
+      left: 5vw;
+      padding: 1.5rem;
+    }
+  
+    .cart-image {
+      width: 15vw;
+    }
+  }
