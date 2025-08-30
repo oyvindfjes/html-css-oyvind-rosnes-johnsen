@@ -13,7 +13,7 @@
 body {
   color: var(--bright-text-color);
   background-color: var(--background-color);
-  background-image: url('images/body-background.jpg');
+  background-image: url('/images/body-background.jpg');
   overflow-x: hidden;
   font-family: unbounded, sans-serif;
   margin: 0 auto;
