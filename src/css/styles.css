@@ -195,6 +195,11 @@ ul {
 
 @media (max-width: 600px) {
   /* Header */
+
+  .header {
+    height: 220px;
+    position: relative;
+  }
   .main-header-menu {
     flex-direction: column;
     height: 200px;
