@@ -157,7 +157,7 @@ ul {
 }
 
 .product-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateY(-10px);
   transition: transform 0.3s ease;
 }
 
