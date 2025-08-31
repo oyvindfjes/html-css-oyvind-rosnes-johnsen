@@ -48,12 +48,6 @@ h1 {
   font-size: 3em;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-
 h2 {
   color: var(--red-text-color);
 }
@@ -61,8 +55,6 @@ h2 {
 ul {
   list-style-type: none;
 }
-
-/*HEADER*/
 
 .header {
   position: sticky;
@@ -123,8 +115,6 @@ ul {
   font-size: 1.5rem;
 }
 
-/*PAGE CONTENT*/
-
 .page-content {
   position: relative;
   display: flex;
@@ -141,8 +131,6 @@ ul {
   border-radius: 4rem;
 }
 
-/*PRODUCT CARDS*/
-
 .product-card {
   position: relative;
   display: flex;
@@ -157,9 +145,9 @@ ul {
 }
 
 .product-image {
-  width: 100%; /* Matcher containeren */
-  height: auto; /* Fast høyde eller auto */
-  object-fit: cover; /* Fyller området pent */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -193,105 +181,205 @@ ul {
   position: relative;
 }
 
+/*Phone*/
+
 @media (max-width: 600px) {
-  /* Header */
+.header {
+  height: 220px;
+  position: relative;
+}
+.main-header-menu {
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  .header {
-    height: 220px;
-    position: relative;
-  }
-  .main-header-menu {
-    flex-direction: column;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
+.header-menu-text {
+  font-size: 1.2rem;
+  top: 0;
+  margin: 0.2rem 0;
+}
 
-  .header-menu-text {
-    font-size: 1.2rem;
-    top: 0;
-    margin: 0.2rem 0;
-  }
+.logo {
+  width: 6em !important;
+  margin-top: 10px !important;
+}
 
-  .logo {
-    width: 6em !important;
-    margin-top: 10px !important;
-  }
+.user-actions {
+  top: 1vh;
+  right: 3vw;
+  font-size: 1rem;
+}
 
-  .user-actions {
-    top: 1vh;
-    right: 3vw;
-    font-size: 1rem;
-  }
+.page-content {
+  width: 95vw;
+  top: 120px;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  justify-content: center;
+}
 
-  /* Page content */
-  .page-content {
-    width: 95vw;
-    top: 120px;
-    padding: 2rem 1rem;
-    gap: 1.5rem;
-    justify-content: center;
-  }
+.product-card {
+  max-width: 100%;
+  margin: 0.5rem;
+  padding: 0.8rem;
+}
 
-  /* Product cards */
-  .product-card {
-    max-width: 100%;
-    margin: 0.5rem;
-    padding: 0.8rem;
-  }
+.card-info {
+  margin-bottom: 2rem;
+}
 
-  .card-info {
-    margin-bottom: 2rem;
-  }
+.add-to-cart {
+  font-size: 1.1rem;
+  padding: 0.4rem 0.8rem;
+}
 
-  .add-to-cart {
-    font-size: 1.1rem;
-    padding: 0.4rem 0.8rem;
-  }
+footer {
+  flex-direction: column;
+  height: auto;
+  padding: 1rem;
+  gap: 0.5rem;
+}
 
-  /* Footer */
-  footer {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-    gap: 0.5rem;
-  }
-
-  footer p {
-    margin: 0.2rem 0;
-  }
+footer p {
+  margin: 0.2rem 0;
+}
 }
 
 @media (max-width: 600px) {
-  /* Global text sizing */
-  h1 {
-    font-size: 2rem !important;
-  }
+h1 {
+  font-size: 2rem !important;
+}
 
-  h2 {
-    font-size: 1.5rem !important;
-  }
+h2 {
+  font-size: 1.5rem !important;
+}
 
-  h3 {
-    font-size: 1.2rem !important;
-  }
+h3 {
+  font-size: 1.2rem !important;
+}
 
-  p, li, a {
-    font-size: 1rem !important;
-  }
+p, li, a {
+  font-size: 1rem !important;
+}
 
-  /* Padding reduksjon */
-  .page-content, 
-  .product-detail-container, 
-  .checkout-container, 
-  .confirmation-page-content {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
+.page-content, 
+.product-detail-container, 
+.checkout-container, 
+.confirmation-page-content {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
 
-  /* Form elements */
-  input, button, select, textarea {
-    font-size: 16px !important; /* Forhindrer zoom på iOS */
-  }
+
+
+}
+
+/*Tablet and small desktop*/
+
+@media (min-width: 601px) and (max-width: 1200px) {
+/* Header */
+.main-header-menu {
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.header-menu-text {
+  font-size: 1.5rem;
+  top: 5rem;
+}
+
+.logo {
+  width: 7em;
+  margin-top: 20px;
+}
+
+.user-actions {
+  font-size: 1.3rem;
+  top: 1.5vh;
+  right: 2vw;
+}
+
+/* Page content */
+.page-content {
+  width: 92vw;
+  top: 180px;
+  padding: 120px 3rem 3rem 3rem;
+  gap: 2.5rem;
+  justify-content: center;
+}
+
+/* Product cards */
+.product-card {
+  max-width: 400px;
+  margin: 0.8rem;
+  padding: 1.2rem;
+}
+
+.card-info {
+  margin-bottom: 3rem;
+}
+
+.add-to-cart {
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+}
+
+footer {
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+footer p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+}
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+h1 {
+  font-size: 2.8rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.6rem !important;
+}
+
+p, li, a {
+  font-size: 1.1rem !important;
+}
+
+.page-content, 
+.product-detail-container, 
+.checkout-container, 
+.confirmation-page-content {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+button, 
+.add-to-cart, 
+.size-selector-label, 
+.add-to-cart-label {
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-header-menu a {
+  padding: 0.8rem 1rem;
+  margin: 0.2rem;
+}
+
+.page-content {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 }

@@ -45,7 +45,6 @@
 
 #size-checkbox {
     display: none;
-    
 }
 
 .size-selector-nav p{
@@ -128,49 +127,94 @@
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
-    .product-detail-container {
-      flex-direction: column;
-      padding: 2rem 1rem;
-      top: 0px;
-      width: 95vw;
-      gap: 2rem;
-      margin-bottom: 50px;
-    }
-  
-    .product-detail-image {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-  
-    .product-details-info {
-      font-size: 1.1rem;
-    }
-  
-    .size-selector-label,
-    .add-to-cart-label {
-      margin-left: 0;
-      display: block;
-      text-align: center;
-      margin: 1rem auto;
-    }
-  
-    .size-selector-nav {
-      position: relative;
-      width: 100% !important;
-      left: -40px;
-    }
+/*Phone*/
 
-    .shopping-cart {
-      width: 90vw;
-      min-width: unset;
-      right: 5vw;
-      left: 5vw;
-      padding: 1.5rem;
-    }
+@media (max-width: 600px) {
+.product-detail-container {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    top: 0px;
+    width: 95vw;
+    gap: 2rem;
+    margin-bottom: 50px;
+}
   
-    .cart-image {
-      width: 15vw;
-    }
-  }
+.product-detail-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.product-details-info {
+    font-size: 1.1rem;
+}
+
+.size-selector-label,
+.add-to-cart-label {
+    margin-left: 0;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.size-selector-nav {
+    position: relative;
+    width: 100% !important;
+    left: -40px;
+}
+
+.shopping-cart {
+    width: 90vw;
+    min-width: unset;
+    right: 5vw;
+    left: 5vw;
+    padding: 1.5rem;
+}
+
+.cart-image {
+    width: 15vw;
+}
+}
+
+/*Tablet & samll desktop*/
+
+@media (min-width: 601px) and (max-width: 1200px) {
+.product-detail-container {
+    padding: 3rem 2rem;
+    top: -120px;
+    width: 92vw;
+    gap: 3rem;
+}
+
+.product-detail-image {
+    width: 35vw;
+    max-width: 400px;
+}
+
+.product-details-info {
+    font-size: 1.3rem;
+}
+
+.size-selector-label,
+.add-to-cart-label {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+.size-selector-nav {
+    position: relative;
+    width: 94% !important;
+    left: -20px;
+    margin-bottom: 20px;
+}
+
+.shopping-cart {
+    width: 70vw;
+    min-width: unset;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.cart-image {
+    width: 8vw;
+}
+}
