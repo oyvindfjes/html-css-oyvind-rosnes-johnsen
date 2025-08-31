@@ -278,10 +278,6 @@ p, li, a {
 
 @media (min-width: 601px) and (max-width: 1200px) {
 
-.main-header-menu {
-  justify-content: space-around;
-  gap: 1rem;
-}
 
 .header-menu-text {
   font-size: 1.5rem;
@@ -330,6 +326,7 @@ footer p {
   font-size: 1.1rem;
   margin: 0.3rem 0;
 }
+
 }
 
 @media (min-width: 601px) and (max-width: 1200px) {
@@ -352,12 +349,5 @@ p, li, a {
 
 
 
-.main-header-menu a {
-  padding: 0.8rem 1rem;
-  margin: 0.2rem;
-}
 
-.page-content {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 }
