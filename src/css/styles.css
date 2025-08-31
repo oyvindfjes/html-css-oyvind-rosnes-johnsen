@@ -272,15 +272,11 @@ p, li, a {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
 }
-
-
-
 }
 
 /*Tablet and small desktop*/
 
 @media (min-width: 601px) and (max-width: 1200px) {
-/* Header */
 .main-header-menu {
   justify-content: space-around;
   gap: 1rem;
@@ -301,8 +297,6 @@ p, li, a {
   top: 1.5vh;
   right: 2vw;
 }
-
-/* Page content */
 .page-content {
   width: 92vw;
   top: 180px;
@@ -311,7 +305,6 @@ p, li, a {
   justify-content: center;
 }
 
-/* Product cards */
 .product-card {
   max-width: 400px;
   margin: 0.8rem;

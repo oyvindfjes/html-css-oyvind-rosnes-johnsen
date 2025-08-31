@@ -150,7 +150,7 @@ input, .confirm-btn {
 }
 
 .summary-image {
-    width: 15vw;
+    width: 15vw !important;
 }
 
 .details-form {
@@ -159,6 +159,19 @@ input, .confirm-btn {
 
 input, .confirm-btn {
     width: 14vw;
-    min-width: 150px;
+}
+
+
+.checkout-container h2 {
+    font-size: 1rem !important;
+}
+
+.checkout-container h3 {
+    font-size: 1rem !important;
+}
+
+.shipping-details {
+    left: 45vw;
+    position: absolute;
 }
 }

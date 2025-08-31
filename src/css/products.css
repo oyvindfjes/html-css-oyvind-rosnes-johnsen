@@ -10,6 +10,7 @@
     top: -150px;
 }
 
+/*Phone*/
 @media (max-width: 600px) {
 .our-jackets-h1 {
   font-size: 1.8rem;
