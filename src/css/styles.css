@@ -184,6 +184,11 @@ ul {
 /*Phone*/
 
 @media (max-width: 600px) {
+
+body {
+  max-width: 100%;
+}
+
 .header {
   height: 220px;
   position: relative;
@@ -272,6 +277,7 @@ p, li, a {
 /*Tablet and small desktop*/
 
 @media (min-width: 601px) and (max-width: 1200px) {
+
 .main-header-menu {
   justify-content: space-around;
   gap: 1rem;
@@ -298,7 +304,6 @@ p, li, a {
   padding: 120px 3rem 3rem 3rem;
   gap: 2.5rem;
   justify-content: center;
-  justify-self: center;
 }
 
 .product-card {
