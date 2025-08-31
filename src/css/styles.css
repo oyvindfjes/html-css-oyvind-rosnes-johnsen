@@ -266,13 +266,7 @@ p, li, a {
   font-size: 1rem !important;
 }
 
-.page-content, 
-.product-detail-container, 
-.checkout-container, 
-.confirmation-page-content {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
+
 }
 
 /*Tablet and small desktop*/
@@ -349,24 +343,8 @@ p, li, a {
   font-size: 1.1rem !important;
 }
 
-.page-content, 
-.product-detail-container, 
-.checkout-container, 
-.confirmation-page-content {
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
-}
 
-button, 
-.add-to-cart, 
-.size-selector-label, 
-.add-to-cart-label {
-  min-height: 44px;
-  min-width: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .main-header-menu a {
   padding: 0.8rem 1rem;
