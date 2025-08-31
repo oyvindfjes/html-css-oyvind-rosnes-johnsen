@@ -298,6 +298,7 @@ p, li, a {
   padding: 120px 3rem 3rem 3rem;
   gap: 2.5rem;
   justify-content: center;
+  justify-self: center;
 }
 
 .product-card {
